@@ -15,7 +15,7 @@ infrablockspace-node-subsystem = {path = "../../subsystem" }
 infrablockspace-node-primitives = { path = "../../primitives" }
 infrablockspace-node-subsystem-util = { path = "../../subsystem-util" }
 infrablockspace-node-network-protocol = { path = "../../network/protocol" }
-arrayvec = "0.5.2"
+arrayvec = "0.7.4"
 indexmap = "1.9.1"
 parity-scale-codec = { version = "3.3.0", default-features = false, features = ["derive"] }
 thiserror = "1.0.31"
