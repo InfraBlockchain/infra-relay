@@ -4219,7 +4219,7 @@ dependencies = [
  "sp-maybe-compressed-blob",
  "sp-runtime",
  "thiserror",
- "zstd",
+ "zstd 0.12.4",
 ]
 
 [[package]]
@@ -11162,7 +11162,7 @@ version = "4.1.0-dev"
 source = "git+https://github.com/InfraBlockchain/infra-substrate?branch=master#c08c9aeb48966f57907d9fac59ec3b6e31255423"
 dependencies = [
  "thiserror",
- "zstd",
+ "zstd 0.11.2+zstd.1.5.2",
 ]
 
 [[package]]
@@ -12621,7 +12621,7 @@ dependencies = [
  "sp-version",
  "sp-weights",
  "substrate-rpc-client",
- "zstd",
+ "zstd 0.11.2+zstd.1.5.2",
 ]
 
 [[package]]
@@ -13181,7 +13181,7 @@ dependencies = [
  "sha2 0.10.7",
  "toml",
  "windows-sys 0.42.0",
- "zstd",
+ "zstd 0.11.2+zstd.1.5.2",
 ]
 
 [[package]]
@@ -14137,7 +14137,16 @@ version = "0.11.2+zstd.1.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "20cc960326ece64f010d2d2107537f26dc589a6573a316bd5b1dba685fa5fde4"
 dependencies = [
- "zstd-safe",
+ "zstd-safe 5.0.2+zstd.1.5.2",
+]
+
+[[package]]
+name = "zstd"
+version = "0.12.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1a27595e173641171fc74a1232b7b1c7a7cb6e18222c11e9dfb9888fa424c53c"
+dependencies = [
+ "zstd-safe 6.0.6",
 ]
 
 [[package]]
@@ -14145,6 +14154,16 @@ name = "zstd-safe"
 version = "5.0.2+zstd.1.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1d2a5585e04f9eea4b2a3d1eca508c4dee9592a89ef6f450c11719da0726f4db"
+dependencies = [
+ "libc",
+ "zstd-sys",
+]
+
+[[package]]
+name = "zstd-safe"
+version = "6.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ee98ffd0b48ee95e6c5168188e44a54550b1564d9d530ee21d5f0eaed1069581"
 dependencies = [
  "libc",
  "zstd-sys",
